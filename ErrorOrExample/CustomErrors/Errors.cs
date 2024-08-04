@@ -2,7 +2,7 @@
 
 namespace ErrorOrExample.CustomErrors;
 
-internal class Errors
+internal static class Errors
 {
     public static Error DivisionByZeroError = Error.Unexpected(
         code: "DivisionByZero",
