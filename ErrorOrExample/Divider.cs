@@ -1,4 +1,5 @@
 ﻿using ErrorOr;
+using ErrorOrExample.CustomErrors;
 
 namespace ErrorOrExample;
 
@@ -20,6 +21,6 @@ internal class Divider
     {
         return Divisor != 0
             ? Dividend / Divisor
-            : Error.Unexpected("DivisionByZero", "Cannot divide by zero.");
+            : Errors.DivisionByZeroError;
     }
 }
